@@ -1,10 +1,10 @@
 name: Print Commit Message
 
-
 on:
   push:
     branches:
       - master
+      
 jobs:
   print-commit-info:
     runs-on: ubuntu-lastest
