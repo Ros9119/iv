@@ -1,12 +1,16 @@
+package com.itsvil;
+
 import java.util.Random;
 import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
 
-        RandomSort randomSort=new RandomSort();
+        var randomSort=new RandomSort();
+        final var MAX_VALUE= 100;
+        final var ARRAY_SIZE= 10;
 
-        int[] array= IntStream.generate(()-> new Random().nextInt(100)).limit(10).toArray();
+        int[] array= IntStream.generate(()-> new Random().nextInt(MAX_VALUE)).limit(ARRAY_SIZE).toArray();
 
         for(int number : array){
             System.out.print(number + " ");
